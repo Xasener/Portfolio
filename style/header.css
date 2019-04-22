@@ -1,3 +1,54 @@
+@keyframes arrow {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
 header {
-    background-color: orange;
+  background: url("../img/header_jellyfish.jpg") no-repeat center / cover;
+  width: auto;
+  height: 600px;
+}
+header .title-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-img {
+  width: 125px;
+  height: 125px;
+  margin-left: 25px;
+}
+header ul.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  margin-right: 100px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+header ul.nav-menu li {
+  list-style-type: none;
+}
+header ul.nav-menu li a {
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+header ul.nav-menu li a:hover {
+  color: #ececec;
+  cursor: pointer;
+}
+header .main_arrow {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 530px;
+  left: 48%;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
