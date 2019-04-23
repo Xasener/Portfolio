@@ -45,7 +45,7 @@ header .main_arrow {
   height: 48px;
   position: absolute;
   top: 530px;
-  left: 48%;
+  left: 50%;
   animation-name: arrow;
   animation-duration: 1s;
   animation-direction: alternate;
