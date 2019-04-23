@@ -4,59 +4,58 @@
   box-shadow: 0 -20px 100px 0px #0c0c0c;
   z-index: 1;
 }
-.s_intro .about {
+.s_intro .container {
   padding-top: 75px;
   display: flex;
   justify-content: space-around;
-  width: 1000px;
 }
-.s_intro .about .skills {
+.s_intro .container .skills {
   display: flex;
   flex-direction: column;
   width: 600px;
   padding-bottom: 40px;
 }
-.s_intro .about .skills .skills-item {
+.s_intro .container .skills .skills-item {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-.s_intro .about .skills .border {
+.s_intro .container .skills .border {
   width: 600px;
   height: 2px;
   background-color: #c7c7c7;
 }
-.s_intro .about .skills .border .border_inside_style {
-  background-color: #0088ee;
+.s_intro .container .skills .border .border_inside_style {
+  background-color: #2196F3;
   height: 2px;
 }
-.s_intro .about .skills .border .border_in-HTML5 {
+.s_intro .container .skills .border .border_in-HTML5 {
   width: 570px;
 }
-.s_intro .about .skills .border .border_in-CSS3 {
+.s_intro .container .skills .border .border_in-CSS3 {
   width: 504px;
 }
-.s_intro .about .skills .border .border_in-JS {
+.s_intro .container .skills .border .border_in-JS {
   width: 402px;
 }
-.s_intro .about .skills .border .border_in-jQuery {
+.s_intro .container .skills .border .border_in-jQuery {
   width: 516px;
 }
-.s_intro .about .skills .border .border_in-Sass {
+.s_intro .container .skills .border .border_in-Sass {
   width: 534px;
 }
-.s_intro .about .skills .border .border_in-Less {
+.s_intro .container .skills .border .border_in-Less {
   width: 582px;
 }
-.s_intro .about .skills .border .border_in-Gulp {
+.s_intro .container .skills .border .border_in-Gulp {
   width: 372px;
 }
-.s_intro .about .skills .border .border_in-Python {
+.s_intro .container .skills .border .border_in-Python {
   width: 378px;
 }
-.s_intro .about .skills .border .border_in-Django {
+.s_intro .container .skills .border .border_in-Django {
   width: 234px;
 }
-.s_intro .about .skills .border .border_in-MySql {
+.s_intro .container .skills .border .border_in-MySql {
   width: 384px;
 }

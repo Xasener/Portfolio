@@ -3,56 +3,55 @@
   justify-content: center;
   background-color: #f5f5f5;
 }
-.s_university .about {
+.s_university .container {
   padding-top: 75px;
   display: flex;
   justify-content: space-around;
-  width: 1000px;
 }
-.s_university .about .skills {
+.s_university .container .skills {
   display: flex;
   flex-direction: column;
   width: 600px;
   padding-bottom: 40px;
 }
-.s_university .about .skills .skills-item {
+.s_university .container .skills .skills-item {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
-.s_university .about .skills .border {
+.s_university .container .skills .border {
   width: 600px;
   height: 2px;
   background-color: #c7c7c7;
 }
-.s_university .about .skills .border .border_inside_style {
-  background-color: orange;
+.s_university .container .skills .border .border_inside_style {
+  background-color: #FF9800;
   height: 2px;
 }
-.s_university .about .skills .border .border_in-C {
+.s_university .container .skills .border .border_in-C {
   width: 500px;
 }
-.s_university .about .skills .border .border_in-Java {
+.s_university .container .skills .border .border_in-Java {
   width: 222px;
 }
-.s_university .about .skills .border .border_in-Alg_and_Ds {
+.s_university .container .skills .border .border_in-Alg_and_Ds {
   width: 330px;
 }
-.s_university .about .skills .border .border_in-DB {
+.s_university .container .skills .border .border_in-DB {
   width: 378px;
 }
-.s_university .about .skills .border .border_in-CA {
+.s_university .container .skills .border .border_in-CA {
   width: 552px;
 }
-.s_university .about .skills .border .border_in-CE {
+.s_university .container .skills .border .border_in-CE {
   width: 570px;
 }
-.s_university .about .skills .border .border_in-Cisco {
+.s_university .container .skills .border .border_in-Cisco {
   width: 588px;
 }
-.s_university .about .skills .border .border_in-HP {
+.s_university .container .skills .border .border_in-HP {
   width: 582px;
 }
-.s_university .about .skills .border .border_in-Web {
+.s_university .container .skills .border .border_in-Web {
   width: 594px;
 }

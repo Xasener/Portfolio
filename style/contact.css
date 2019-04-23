@@ -1,0 +1,27 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 50px 0;
+}
+.container .cont-container {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  text-align: center;
+}
+.container .cont-container .cont-container_item a {
+  text-decoration: none;
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  color: #fff;
+  background-color: #121212;
+}
+footer p {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 10px;
+}
