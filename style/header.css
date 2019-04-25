@@ -25,11 +25,10 @@ header ul.nav-menu {
   justify-content: space-around;
   width: auto;
   height: 30px;
-  margin-right: 100px;
+  margin-right: 50px;
   font-size: 20px;
   text-align: center;
   text-transform: uppercase;
-  border: 1px solid black;
 }
 header ul.nav-menu .mode_container {
   display: flex;
@@ -42,6 +41,7 @@ header ul.nav-menu .mode_container .mode_item {
 }
 header ul.nav-menu li {
   list-style-type: none;
+  margin-right: 5%;
 }
 header ul.nav-menu li:first-child {
   width: 70px;
@@ -65,18 +65,18 @@ header ul.nav-menu li a:hover:before {
   left: 0;
 }
 header .main_arrow {
-  width: 48px;
-  height: 48px;
   position: absolute;
   top: 530px;
-  left: 50%;
+  left: 48%;
+  width: 45px;
+  height: 45px;
   animation-name: arrow;
   animation-duration: 1s;
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   ul.nav-menu {
     flex-direction: column;
   }

@@ -22,6 +22,7 @@ header {
         width: 125px;
         height: 125px;
         margin-left: 25px;
+        // margin-right: 10%;
     }
 
     ul.nav-menu {
@@ -29,11 +30,10 @@ header {
         justify-content: space-around;
         width: auto;
         height: 30px;
-        margin-right: 100px;
+        margin-right: 50px;
         font-size: 20px;
         text-align: center;
         text-transform: uppercase;
-        border: 1px solid black;
         
         .mode_container {
             display: flex;
@@ -49,6 +49,7 @@ header {
 
         li {
             list-style-type: none;
+            margin-right: 5%;
 
             &:first-child {
                 width: 70px;
@@ -81,11 +82,11 @@ header {
     }
 
     .main_arrow {
-        width: 48px;
-        height: 48px;
         position: absolute;
         top: 530px;
-        left: 50%;
+        left: 48%;
+        width: 45px;
+        height: 45px;
         animation-name: arrow;
         animation-duration: 1s;
         animation-direction: alternate;
@@ -94,7 +95,7 @@ header {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     ul.nav-menu {
         flex-direction: column;
     }

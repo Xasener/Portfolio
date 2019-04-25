@@ -2,17 +2,19 @@
   display: flex;
   justify-content: center;
   box-shadow: 0 -30px 100px 0px #0c0c0c;
-  height: 100vh;
+  height: auto;
   z-index: 1;
 }
 .s_intro .container {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 100px;
 }
 .s_intro .container .skills {
   display: flex;
   flex-direction: column;
   width: calc(90%);
+  padding-left: 5%;
 }
 .s_intro .container .skills .skills-item {
   display: flex;
@@ -25,7 +27,7 @@
   background-color: #c7c7c7;
 }
 .s_intro .container .skills .border .border_inside_style {
-  background-color: #2196F3;
+  background-color: #42A5F5;
   height: 2px;
 }
 .s_intro .container .skills .border .border_in-HTML5 {
