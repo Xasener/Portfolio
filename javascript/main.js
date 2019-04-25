@@ -6,6 +6,8 @@ $(document).ready(function () {
 
   $(".night_mode").click(function(){
     $(".s_contacts, .s_university, .s_certifications, .s_languages, .s_intro").css({"background-color": "#121212" ,"color": "#fff"});
+    $(".night_mode").attr("src", "img/icons8-night-24-blue.png");
+    $(".day_mode").attr("src", "img/icons8-partly-cloudy-day-24.png");
     $(".icon_intro").attr("src", "img/icons8-circled-down-right-24-white.png");
     $(".icon_university").attr("src", "img/icons8-circled-up-right-24-white.png");
     $(".icon_language").attr("src", "img/icons8-below-24-white.png");
@@ -19,6 +21,8 @@ $(document).ready(function () {
   });
   $(".day_mode").click(function(){
     $(".s_contacts, .s_university, .s_certifications, .s_languages, .s_intro").css({"background-color": "#fff" ,"color": "#121212"});
+    $(".day_mode").attr("src", "img/icons8-partly-cloudy-day-24-orange.png");
+    $(".night_mode").attr("src", "img/icons8-night-24.png");
     $(".icon_intro").attr("src", "img/icons8-circled-down-right-24.png");
     $(".icon_university").attr("src", "img/icons8-circled-up-right-24.png");
     $(".icon_language").attr("src", "img/icons8-below-24.png");
