@@ -13,5 +13,5 @@ $(document).ready(function () {
     $(".s_contacts, .s_university, .s_certifications, .s_languages, .s_intro").css({"background-color": "#fff" ,"color": "#121212"});
     $(".mode_item").slideToggle("fast");
     $(".mode").slideToggle("fast");
-});
+  });
 });

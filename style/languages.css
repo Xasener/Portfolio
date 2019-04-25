@@ -12,7 +12,7 @@
 .s_languages .container .skills {
   display: flex;
   flex-direction: column;
-  width: 600px;
+  width: calc(90%);
   padding-bottom: 40px;
 }
 .s_languages .container .skills .skills-item {
@@ -21,7 +21,7 @@
   margin-top: 30px;
 }
 .s_languages .container .skills .border {
-  width: 600px;
+  width: 100%;
   height: 2px;
   background-color: #c7c7c7;
 }
@@ -29,7 +29,7 @@
   height: 2px;
 }
 .s_languages .container .skills .border .border_in-En {
-  width: 420px;
+  width: 70%;
   background: linear-gradient(to right, #01589f 15%, #d8d8d8 25%, #d8d8d8 35%, #d70000 45%, #d70000 55%, #d8d8d8 65%, #d8d8d8 75%, #01589f 85%);
 }
 .s_languages .container .skills .border .border_in-Ru {
@@ -39,6 +39,6 @@
   background: linear-gradient(to right, #2979FF 45%, #FFEA00 55%);
 }
 .s_languages .container .skills .border .border_in-Ge {
-  width: 180px;
+  width: 30;
   background: linear-gradient(to right, #000000 25%, #d70000 35%, #d70000 65%, #FFEA00 75%);
 }

@@ -49,8 +49,4 @@
   .img_cert {
     flex-direction: column;
   }
-  .img_cert img {
-    width: 300px;
-    height: auto;
-  }
 }

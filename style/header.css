@@ -23,7 +23,7 @@ header .logo-img {
 header ul.nav-menu {
   display: flex;
   justify-content: space-around;
-  width: 400px;
+  width: 40%;
   height: 30px;
   margin-right: 100px;
   font-size: 20px;
