@@ -1,5 +1,10 @@
+.s_contacts {
+  display: flex;
+  justify-content: center;
+}
 .container {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 100px 0 50px 0;
 }
@@ -11,6 +16,15 @@
 }
 .container .cont-container .cont-container_item a {
   text-decoration: none;
+}
+@media screen and (max-width: 960px) {
+  .container .title-intro {
+    display: none;
+  }
+  .container .cont-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 footer {
   display: flex;

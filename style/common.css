@@ -11,8 +11,8 @@ body a {
   color: #121212;
 }
 .container {
-  width: 1000px;
-  margin: 0 auto;
+  width: calc(75%);
+  padding-top: 75px;
 }
 .paralax_section {
   min-height: 500px;
