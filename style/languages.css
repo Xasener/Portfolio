@@ -1,6 +1,8 @@
 .s_languages {
   display: flex;
   justify-content: center;
+  box-shadow: 0 -20px 100px 0px #0c0c0c;
+  z-index: 1;
 }
 .s_languages .container {
   padding-top: 75px;

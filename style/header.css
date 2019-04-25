@@ -24,20 +24,44 @@ header ul.nav-menu {
   display: flex;
   justify-content: space-around;
   width: 400px;
+  height: 30px;
   margin-right: 100px;
   font-size: 20px;
+  text-align: center;
   text-transform: uppercase;
+}
+header ul.nav-menu .mode_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header ul.nav-menu .mode_container .mode_item {
+  display: none;
+  width: 70px;
 }
 header ul.nav-menu li {
   list-style-type: none;
 }
+header ul.nav-menu li:first-child {
+  width: 70px;
+}
 header ul.nav-menu li a {
   text-decoration: none;
-  transition: all 0.2s ease;
+  position: relative;
 }
-header ul.nav-menu li a:hover {
-  color: #ececec;
-  cursor: pointer;
+header ul.nav-menu li a::before {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #121212;
+  transition: 0.2s;
+}
+header ul.nav-menu li a:hover:before {
+  width: 100%;
+  left: 0;
 }
 header .main_arrow {
   width: 48px;

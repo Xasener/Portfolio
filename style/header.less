@@ -28,21 +28,54 @@ header {
         display: flex;
         justify-content: space-around;
         width: 400px;
+        height: 30px;
         margin-right: 100px;
         font-size: 20px;
+        text-align: center;
         text-transform: uppercase;
+        // border: 1px solid black;
         
+        .mode_container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            .mode_item {
+                display: none;
+                width: 70px;
+            }
+        }
+
+
         li {
             list-style-type: none;
-            
+
+            &:first-child {
+                width: 70px;
+            }
+
             a {
                 text-decoration: none;
-                transition: all 0.2s ease;
-
-                &:hover {
-                    color: #ececec;
-                    cursor: pointer;
+                position: relative;
+                
+                &::before {
+                    content: '';
+                    bottom: 0;
+                    right: 0;
+                    position: absolute;
+                    width: 0%;
+                    height: 1px;
+                    background-color: #121212;
+                    transition: 0.2s;
+                    // transform: scaleX(0);
                 }
+
+                &:hover:before {
+                    // transform: scaleX(1);
+                    width: 100%;
+                    left: 0;
+                }
+
             }
         }
     }

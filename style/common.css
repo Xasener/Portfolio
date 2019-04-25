@@ -14,3 +14,7 @@ body a {
   width: 1000px;
   margin: 0 auto;
 }
+.paralax_section {
+  min-height: 500px;
+  background: transparent;
+}

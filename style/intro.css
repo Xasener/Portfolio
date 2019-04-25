@@ -1,11 +1,11 @@
 .s_intro {
   display: flex;
   justify-content: center;
-  box-shadow: 0 -20px 100px 0px #0c0c0c;
+  box-shadow: 0 -30px 100px 0px #0c0c0c;
+  height: 100vh;
   z-index: 1;
 }
 .s_intro .container {
-  padding-top: 75px;
   display: flex;
   justify-content: space-around;
 }
@@ -13,7 +13,6 @@
   display: flex;
   flex-direction: column;
   width: 600px;
-  padding-bottom: 40px;
 }
 .s_intro .container .skills .skills-item {
   display: flex;

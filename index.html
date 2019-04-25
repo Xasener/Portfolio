@@ -15,17 +15,24 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" defer></script>
     <script src="javascript/parallax.min.js" defer></script>
+    <script src="javascript/main.js" defer></script>
 </head>
 <body>
         <!-- HEADER -->
-    <header data-parallax="scroll" data-image-src="img/header_jellyfish.jpg" data-speed="0.6" data-bleed="0">
+    <header data-parallax="scroll" data-image-src="img/bethany-legg-9248-unsplash.jpg" data-speed="0.6">
         <div class="title-menu">
             <div class="logo">
                 <img class="logo-img" src="img/logo.png" title="Logo">
             </div>
             <nav>
                 <ul class="nav-menu">
-                    <li class="nav-menu_item"><a href="#">Home</a></li>
+                    <div class="mode_container">
+                    <li class="mode"><a href="#">Mode</a></li>
+                    <li class="mode_item">
+                        <img class="night_mode" src="img/icons8-night-24.png" title="NightMode">
+                        <img class="day_mode" src="img/icons8-partly-cloudy-day-24.png" title="DayMode">
+                    </li>
+                </div>
                     <li class="nav-menu_item"><a href="#main_skills">About</a></li>
                     <li class="nav-menu_item"><a href="#education">Education</a></li>
                     <li class="nav-menu_item"><a href="#contacts">Contact</a></li>
@@ -120,6 +127,7 @@
         </div>
     </section>
 
+    <div class="paralax_section" data-parallax="scroll" data-image-src="img/vadim-sherbakov-194-unsplash.jpg" data-speed="0.6" data-bleed="0"></div>
         <!-- UNIVERSITY SECTION -->
     <section class="s_university">
         <a name="education"></a>
@@ -203,6 +211,7 @@
         </div>
     </section>
 
+    <div class="paralax_section" data-parallax="scroll" data-image-src="img/jason-wong-502099-unsplash.jpg" data-speed="0.6" data-bleed="0"></div>
         <!-- LANGUAGE SECTION -->
     <section class="s_languages">
         <a name="languages_skills"></a>
@@ -254,8 +263,8 @@
                 <h5>Click me for looking!</h5>
             </div>
             <div class="img_cert">
-                <img src="img/Cisco_cert.png" title="Cisco_cert">
-                <img src="img/HP_cert.png" title="HP_cert">
+                <img class="certificate" src="img/Cisco_cert.png" title="Cisco_cert">
+                <img class="certificate" src="img/HP_cert.png" title="HP_cert">
             </div>
             <div class="decr_cert">
                 <h3>CISCO IT Essentials</h3>
