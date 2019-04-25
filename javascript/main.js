@@ -6,6 +6,7 @@ $(document).ready(function () {
 
   $(".night_mode").click(function(){
     $(".s_contacts, .s_university, .s_certifications, .s_languages, .s_intro").css({"background-color": "#121212" ,"color": "#fff"});
+    $(".s_contacts a").css("color", "#fff");
     $(".mode_item").slideToggle("fast");
     $(".mode").slideToggle("fast");
   });

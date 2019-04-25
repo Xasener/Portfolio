@@ -8,45 +8,35 @@
   flex-direction: column;
   padding-top: 75px;
 }
-.s_certifications .container .img_cert {
+.s_certifications .container .cert_container {
   display: flex;
   justify-content: space-around;
 }
-.s_certifications .container .img_cert img {
+.s_certifications .container .cert_container .describe_cert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.s_certifications .container .cert_container .describe_cert img {
   width: 500px;
   height: auto;
   margin-top: 20px;
   transition: all 0.3s ease;
 }
-.s_certifications .container .img_cert img:first-child {
-  transform: rotate(10deg);
-  position: relative;
-  left: 5%;
-  z-index: 1;
-}
-.s_certifications .container .img_cert img:first-child:hover {
-  transform: scale(1.1);
-}
-.s_certifications .container .img_cert img:first-child:active {
-  transform: scale(1.8);
-}
-.s_certifications .container .img_cert img:last-child {
-  transform: rotate(2deg);
-}
-.s_certifications .container .img_cert img:last-child:hover {
-  transform: scale(1.1);
-  z-index: 1;
-}
-.s_certifications .container .img_cert img:last-child:active {
-  transform: scale(1.8);
-}
-.s_certifications .container .decr_cert {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 40px;
-}
-@media screen and (max-width: 960px) {
-  .img_cert {
+@media screen and (max-width: 1000px) {
+  .cert_container {
     flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cert_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cert_container .describe_cert .cert_cisco,
+  .cert_container .describe_cert .cert_hp {
+    max-width: 350px;
   }
 }
