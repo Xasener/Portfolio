@@ -27,13 +27,13 @@ header {
     ul.nav-menu {
         display: flex;
         justify-content: space-around;
-        width: 40%;
+        width: auto;
         height: 30px;
         margin-right: 100px;
         font-size: 20px;
         text-align: center;
         text-transform: uppercase;
-        // border: 1px solid black;
+        border: 1px solid black;
         
         .mode_container {
             display: flex;
@@ -91,5 +91,11 @@ header {
         animation-direction: alternate;
         animation-timing-function: ease-in-out; 
         animation-iteration-count: infinite;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    ul.nav-menu {
+        flex-direction: column;
     }
 }
