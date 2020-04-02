@@ -16,12 +16,7 @@
 .container .cont-container .cont-container_item a {
   text-decoration: none;
 }
-.container .cont-container .cont-container_item .social-media {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.container .cont-container .cont-container_item .social-media i.icon-github-circled::before {
+.container .cont-container .cont-container_item i.icon-github-circled::before {
   margin: 3px;
 }
 @media screen and (max-width: 960px) {
