@@ -33,6 +33,11 @@ body i.icon-github-circled {
   max-width: 1440px;
 }
 .paralax_section {
-  min-height: 500px;
+  height: 500px;
   background: transparent;
+}
+@media screen and (max-width: 600px) {
+  .paralax_section {
+    height: 300px;
+  }
 }
