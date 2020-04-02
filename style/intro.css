@@ -2,18 +2,17 @@
   display: flex;
   justify-content: center;
   box-shadow: 0 -30px 100px 0px #0c0c0c;
-  height: auto;
+  padding: 100px 0;
   z-index: 1;
 }
 .s_intro .container {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 100px;
 }
 .s_intro .container .skills {
   display: flex;
   flex-direction: column;
-  width: calc(90%);
+  width: calc(100% - 10%);
   padding-left: 5%;
 }
 .s_intro .container .skills .skills-item {
@@ -55,7 +54,7 @@
   width: 78%;
 }
 .s_intro .container .skills .border .border_in-Django {
-  width: 80%;
+  width: 85%;
 }
 .s_intro .container .skills .border .border_in-MySql {
   width: 64%;

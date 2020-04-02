@@ -1,14 +1,12 @@
 .s_contacts {
     display: flex;
     justify-content: center;
+    padding: 50px 0;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 100px 0 50px 0;
-
 
     .cont-container {
         display: flex;
@@ -19,6 +17,14 @@
         .cont-container_item {
             a {
                 text-decoration: none;
+            }
+            .social-media {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                i.icon-github-circled::before {
+                    margin: 3px;
+                }
             }
         }
     }

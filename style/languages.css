@@ -2,19 +2,18 @@
   display: flex;
   justify-content: center;
   box-shadow: 0 -20px 100px 0px #0c0c0c;
+  padding: 75px 0;
   z-index: 1;
 }
 .s_languages .container {
-  padding-top: 75px;
   display: flex;
   justify-content: space-around;
 }
 .s_languages .container .skills {
   display: flex;
   flex-direction: column;
-  width: calc(90%);
+  width: calc(100% - 10%);
   padding-left: 5%;
-  padding-bottom: 40px;
 }
 .s_languages .container .skills .skills-item {
   display: flex;

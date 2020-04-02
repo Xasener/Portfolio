@@ -1,12 +1,11 @@
 .s_contacts {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
 }
 .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  padding: 100px 0 50px 0;
 }
 .container .cont-container {
   display: flex;
@@ -16,6 +15,14 @@
 }
 .container .cont-container .cont-container_item a {
   text-decoration: none;
+}
+.container .cont-container .cont-container_item .social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .cont-container .cont-container_item .social-media i.icon-github-circled::before {
+  margin: 3px;
 }
 @media screen and (max-width: 960px) {
   .container .title-intro {

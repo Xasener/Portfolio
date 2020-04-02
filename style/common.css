@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+}
 * {
   margin: 0;
   padding: 0;
@@ -10,8 +21,15 @@ body {
 body a {
   color: #121212;
 }
+body i {
+  font-size: 22px;
+}
+body i.icon-github-circled {
+  font-size: 24px;
+}
 .container {
-  width: calc(75%);
+  width: calc(100% - 25%);
+  max-width: 1440px;
 }
 .paralax_section {
   min-height: 500px;
