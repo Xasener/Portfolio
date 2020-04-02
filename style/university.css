@@ -14,8 +14,8 @@
 .s_university .container .skills {
   display: flex;
   flex-direction: column;
+  width: 90%;
   padding-right: 5%;
-  width: calc(100% - 10%);
 }
 .s_university .container .skills .skills-item {
   display: flex;
@@ -57,4 +57,9 @@
 }
 .s_university .container .skills .border .border_in-Web {
   width: 99%;
+}
+@media screen and (max-width: 600px) {
+  .s_university .container {
+    flex-direction: column-reverse;
+  }
 }

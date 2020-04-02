@@ -12,7 +12,7 @@
         .skills {
             display: flex;
             flex-direction: column;
-            width: calc(100% - 10%);
+            width: 90%;
             padding-left: 5%;
         
             .skills-item {
@@ -45,6 +45,20 @@
                     width: 30%;
                     // background: linear-gradient(to right, #000000 25%, #d70000 35%, #d70000 65%, #FFEA00 75%)
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .s_languages {
+        .container {
+            flex-direction: column;
+            .skills {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding-left: 0;
             }
         }
     }

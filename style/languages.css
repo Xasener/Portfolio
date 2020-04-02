@@ -12,7 +12,7 @@
 .s_languages .container .skills {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 10%);
+  width: 90%;
   padding-left: 5%;
 }
 .s_languages .container .skills .skills-item {
@@ -34,4 +34,15 @@
 }
 .s_languages .container .skills .border .border_in-Ge {
   width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .s_languages .container {
+    flex-direction: column;
+  }
+  .s_languages .container .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
 }

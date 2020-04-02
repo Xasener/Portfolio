@@ -12,7 +12,7 @@
 .s_intro .container .skills {
   display: flex;
   flex-direction: column;
-  width: calc(100% - 10%);
+  width: 90%;
   padding-left: 5%;
 }
 .s_intro .container .skills .skills-item {
@@ -58,4 +58,13 @@
 }
 .s_intro .container .skills .border .border_in-MySql {
   width: 64%;
+}
+@media screen and (max-width: 600px) {
+  .s_intro .container {
+    flex-direction: column;
+  }
+  .s_intro .container .skills {
+    width: 100%;
+    padding-left: 0;
+  }
 }
