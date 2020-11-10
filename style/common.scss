@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+@import 'fontello.scss';
+@import 'header.scss';
+@import 'intro.scss';
+@import 'university.scss';
+@import 'languages.scss';
+@import 'certification.scss';
+@import 'contact.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  color: #121212;
+  a {
+    color: #121212;
+  }
+  i {
+    color: #121212;
+    font-size: 22px;
+    &.icon-github-circled {
+      font-size: 24px;
+    }
+  }
+}
+
+.container {
+  width: calc(100% - 25%);
+  max-width: 1440px;
+}
+
+.paralax_section {
+  height: 500px;
+  background: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  .paralax_section {
+    height: 300px;
+  }
+}

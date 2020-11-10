@@ -1,20 +1,461 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: "fontello";
+  src: url("../font/fontello.eot?72802477");
+  src: url("../font/fontello.eot?72802477#iefix") format("embedded-opentype"), url("../font/fontello.woff2?72802477") format("woff2"), url("../font/fontello.woff?72802477") format("woff"), url("../font/fontello.ttf?72802477") format("truetype"), url("../font/fontello.svg?72802477#fontello") format("svg");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xK3dSBYKcSV-LCoeQqfX1RYOo3qOK7g.ttf) format('truetype');
 }
-@font-face {
-  font-family: 'Source Sans Pro';
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'fontello';
+    src: url('../font/fontello.svg?72802477#fontello') format('svg');
+  }
+}
+*/
+[class^=icon-]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
   font-style: normal;
-  font-weight: 600;
-  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v13/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwlxdr.ttf) format('truetype');
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 0.2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
+
+.icon-cloud-sun-inv:before {
+  content: "";
+}
+
+/* '' */
+.icon-down-open:before {
+  content: "";
+}
+
+/* '' */
+.icon-cloud-moon-inv:before {
+  content: "";
+}
+
+/* '' */
+.icon-facebook-brands:before {
+  content: "";
+}
+
+/* '' */
+.icon-arrow-curved:before {
+  content: "";
+}
+
+/* '' */
+.icon-github-circled:before {
+  content: "";
+}
+
+/* '' */
+.icon-up-circled:before {
+  content: "";
+}
+
+/* '' */
+.icon-down-circled:before {
+  content: "";
+}
+
+/* '' */
+.icon-telegram:before {
+  content: "";
+}
+
+/* '' */
+@keyframes arrow {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+header {
+  width: 100%;
+  height: 600px;
+}
+header .title-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo-img {
+  width: 125px;
+  height: 125px;
+  margin-left: 25px;
+}
+header ul.nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: auto;
+  margin-right: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+header ul.nav-menu .mode_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header ul.nav-menu .mode_container .mode_item {
+  display: none;
+  width: 70px;
+}
+header ul.nav-menu li {
+  list-style-type: none;
+  position: relative;
+  margin: 5px;
+}
+header ul.nav-menu li a {
+  text-decoration: none;
+}
+header ul.nav-menu li a::before {
+  content: "";
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  background-color: #121212;
+  transition: 0.2s;
+}
+header ul.nav-menu li a:hover:before {
+  width: 100%;
+  left: 0;
+}
+header .main_arrow {
+  position: absolute;
+  top: 540px;
+  left: 48%;
+  font-size: 30px;
+  color: rgba(255, 255, 255, 0.7);
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@media screen and (max-width: 600px) {
+  header .title-menu {
+    position: relative;
+    top: 15px;
+  }
+
+  ul.nav-menu {
+    flex-direction: column;
+  }
+}
+.s_intro {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -30px 100px 0px #0c0c0c;
+  padding: 100px 0;
+  z-index: 1;
+}
+.s_intro .container {
+  display: flex;
+  justify-content: space-around;
+}
+.s_intro .container .skills {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 5%;
+}
+.s_intro .container .skills .skills-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.s_intro .container .skills .border {
+  width: 100%;
+  height: 2px;
+  background-color: #c7c7c7;
+}
+.s_intro .container .skills .border .border_inside_style {
+  background-color: #42A5F5;
+  height: 2px;
+}
+.s_intro .container .skills .border .border_in-HTML5 {
+  width: 95%;
+}
+.s_intro .container .skills .border .border_in-CSS3 {
+  width: 84%;
+}
+.s_intro .container .skills .border .border_in-JS {
+  width: 67%;
+}
+.s_intro .container .skills .border .border_in-jQuery {
+  width: 86%;
+}
+.s_intro .container .skills .border .border_in-Sass {
+  width: 89%;
+}
+.s_intro .container .skills .border .border_in-Less {
+  width: 97%;
+}
+.s_intro .container .skills .border .border_in-Gulp {
+  width: 62%;
+}
+.s_intro .container .skills .border .border_in-Python {
+  width: 78%;
+}
+.s_intro .container .skills .border .border_in-Django {
+  width: 85%;
+}
+.s_intro .container .skills .border .border_in-MySql {
+  width: 64%;
+}
+
+@media screen and (max-width: 600px) {
+  .s_intro .container {
+    flex-direction: column;
+  }
+  .s_intro .container .skills {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.s_university {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  height: auto;
+  box-shadow: 0 -20px 100px 0px #0c0c0c;
+  padding: 100px 0;
+  z-index: 1;
+}
+.s_university .container {
+  display: flex;
+  justify-content: space-around;
+}
+.s_university .container .skills {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-right: 5%;
+}
+.s_university .container .skills .skills-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.s_university .container .skills .border {
+  width: 100%;
+  height: 2px;
+  background-color: #c7c7c7;
+}
+.s_university .container .skills .border .border_inside_style {
+  background-color: #FFA726;
+  height: 2px;
+}
+.s_university .container .skills .border .border_in-C {
+  width: 83%;
+}
+.s_university .container .skills .border .border_in-Java {
+  width: 37%;
+}
+.s_university .container .skills .border .border_in-Alg_and_Ds {
+  width: 55%;
+}
+.s_university .container .skills .border .border_in-DB {
+  width: 63%;
+}
+.s_university .container .skills .border .border_in-CA {
+  width: 92%;
+}
+.s_university .container .skills .border .border_in-CE {
+  width: 95%;
+}
+.s_university .container .skills .border .border_in-Cisco {
+  width: 98%;
+}
+.s_university .container .skills .border .border_in-HP {
+  width: 97%;
+}
+.s_university .container .skills .border .border_in-Web {
+  width: 99%;
+}
+
+@media screen and (max-width: 600px) {
+  .s_university .container {
+    flex-direction: column-reverse;
+  }
+}
+.s_languages {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 -20px 100px 0px #0c0c0c;
+  padding: 75px 0;
+  z-index: 1;
+}
+.s_languages .container {
+  display: flex;
+  justify-content: space-around;
+}
+.s_languages .container .skills {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding-left: 5%;
+}
+.s_languages .container .skills .skills-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.s_languages .container .skills .border {
+  width: 100%;
+  height: 2px;
+  background-color: #c7c7c7;
+}
+.s_languages .container .skills .border .border_inside_style {
+  height: 2px;
+  background-color: #66BB6A;
+}
+.s_languages .container .skills .border .border_in-En {
+  width: 70%;
+}
+.s_languages .container .skills .border .border_in-Ge {
+  width: 30%;
+}
+
+@media screen and (max-width: 600px) {
+  .s_languages .container {
+    flex-direction: column;
+  }
+  .s_languages .container .skills {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0;
+  }
+}
+.s_certifications {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 75px 0;
+}
+.s_certifications .container {
+  display: flex;
+  flex-direction: column;
+}
+.s_certifications .container .cert_container {
+  display: flex;
+  justify-content: space-around;
+}
+.s_certifications .container .cert_container .describe_cert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.s_certifications .container .cert_container .describe_cert img {
+  width: 500px;
+  height: auto;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1000px) {
+  .cert_container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .cert_container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .cert_container .describe_cert .cert_cisco, .cert_container .describe_cert .cert_hp {
+    max-width: 350px;
+  }
+}
+.s_contacts {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.container .cont-container {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  text-align: center;
+}
+.container .cont-container .cont-container_item a {
+  text-decoration: none;
+}
+.container .cont-container .cont-container_item i.icon-github-circled::before {
+  margin: 3px;
+}
+
+@media screen and (max-width: 960px) {
+  .container .title-intro {
+    display: none;
+  }
+  .container .cont-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+footer {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+  color: #fff;
+  background-color: #121212;
+}
+footer p {
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  font-size: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
+
 body {
   color: #121212;
 }
@@ -28,14 +469,17 @@ body i {
 body i.icon-github-circled {
   font-size: 24px;
 }
+
 .container {
   width: calc(100% - 25%);
   max-width: 1440px;
 }
+
 .paralax_section {
   height: 500px;
   background: transparent;
 }
+
 @media screen and (max-width: 600px) {
   .paralax_section {
     height: 300px;
